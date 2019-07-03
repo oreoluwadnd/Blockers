@@ -5,8 +5,8 @@ export default class ChatAvatar extends Component<{}> {
     render() {
       return (
           <View style={styles.container}>
-      <View>
-         <Icon name="user-circle" size={50} color='white'/>
+      <View style={styles.chatavatarview}>
+         <Icon name="user-circle" size={35} color='white'/>
          </View>
          <View style={styles.chatnameview}>
          <Text style={styles.chatname}>
@@ -29,5 +29,8 @@ export default class ChatAvatar extends Component<{}> {
             chatnameview:{
                 marginTop: 15,
                 marginLeft: 10,
+            },
+            chatavatarview:{
+                marginTop: 8,
             }
         })
