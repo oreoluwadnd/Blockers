@@ -5,8 +5,8 @@ import Signup from './pages/Signup';
 import Welcome from './pages/Welcome';
 import Homescreen from './Homescreen';
 import Forgot from './components/Forgot';
+import ChatScreen from './screens/ChatScreen'
 import DiscoverScreen from './screens/DiscoverScreen'
-import ChatScreen from './screens/ChatScreen';
 import MatchesSceen from './screens/MatchesScreen'
 import ProfileScreen from './screens/ProfileScreen';
 import Profile2 from './screens/Profile2'
