@@ -9,7 +9,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, StatusBar} from 'react-native';
 import Routes from './src/Routes';
-import ChatScreen from './src/screens/ChatScreen';
+import ChatScreen from './src/screens/ChatScreen'
 import Homescreen from './src/Homescreen';
 import Welcome from './src/pages/Welcome'
 import HomeScreen from './src/Homescreen';
@@ -22,7 +22,7 @@ import MatchesScreen from './src/screens/MatchesScreen'
 import Plugicon from './src/icons/Plugicon'
 import ProfileScreen from './src/screens/ProfileScreen';
 import RatesIcons from './src/icons/RatesIcons'; 
-import ActandDec from './src/components/ActandDec'
+import ChatAvatar from './src/components/ChatAvatar';
 import Aboutscreen from './src/screens/AboutScreen'
 import ContactIcon from './src/icons/ContactIcon'
 import Gender from './src/pages/Gender'
@@ -31,7 +31,7 @@ export default class App extends Component<{}> {
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#800000" barStyle="light-content"/>
-    <ChatScreen/>
+    <ChatAvatar/>
       </View>
     );
   }
