@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, StatusBar} from 'react-native';
 import Routes from './src/Routes';
+import ChatScreen from './src/screens/ChatScreen';
 import Homescreen from './src/Homescreen';
 import Welcome from './src/pages/Welcome'
 import HomeScreen from './src/Homescreen';
@@ -25,13 +26,12 @@ import ActandDec from './src/components/ActandDec'
 import Aboutscreen from './src/screens/AboutScreen'
 import ContactIcon from './src/icons/ContactIcon'
 import Gender from './src/pages/Gender'
-import FakeApp from './src/Tutorial/FakeApp';
 export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#800000" barStyle="light-content"/>
-    <Routes/>
+    <ChatScreen/>
       </View>
     );
   }
