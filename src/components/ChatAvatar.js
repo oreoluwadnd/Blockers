@@ -6,7 +6,7 @@ export default class ChatAvatar extends Component<{}> {
       return (
           <View style={styles.container}>
       <View>
-         <Icon name="user-circle" size={50} color:'white'/>
+         <Icon name="user-circle" size={50} color='white'/>
          </View>
          <View style={styles.chatnameview}>
          <Text style={styles.chatname}>
