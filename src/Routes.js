@@ -6,7 +6,7 @@ import Welcome from './pages/Welcome';
 import Homescreen from './Homescreen';
 import Forgot from './components/Forgot';
 import DiscoverScreen from './screens/DiscoverScreen'
-import LikesScreen from './screens/LikesScreen'
+import ChatScreen from './screens/ChatScreen';
 import MatchesSceen from './screens/MatchesScreen'
 import ProfileScreen from './screens/ProfileScreen';
 import Profile2 from './screens/Profile2'
@@ -28,8 +28,9 @@ export default class Routes extends Component<{}> {
     <Scene key="discover" component={DiscoverScreen} title="Discover"/>
     <Scene key="profile2" component={Profile2} title="profile"/>
     <Scene key="gender" component={Gender} title="gender"/>
+    <Scene key="chat" component={ChatScreen} title="chat"/>
       </Stack>
   </Router>
-        )
+        );
     }
 }

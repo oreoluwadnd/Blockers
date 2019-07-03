@@ -22,7 +22,7 @@ import MatchesScreen from './src/screens/MatchesScreen'
 import Plugicon from './src/icons/Plugicon'
 import ProfileScreen from './src/screens/ProfileScreen';
 import RatesIcons from './src/icons/RatesIcons'; 
-import ChatAvatar from './src/components/ChatAvatar';
+import MessageContBox from './src/components/MessageContBox';
 import Aboutscreen from './src/screens/AboutScreen'
 import ContactIcon from './src/icons/ContactIcon'
 import Gender from './src/pages/Gender'
