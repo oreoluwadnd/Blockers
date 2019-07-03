@@ -13,6 +13,9 @@ export default class MatchesScreen extends Component<{}> {
   profile2(){
     Actions.profile2()
     }
+    chat(){
+      Actions.chat()
+      }
    static navigationOptions = {
      drawerIcon: ({tintColor}) => (
        <Icon name='rose' style={{color:tintColor }}/>
@@ -70,7 +73,7 @@ export default class MatchesScreen extends Component<{}> {
   <RatesIcons/>
   </View>
   <View style={styles.matchesViewCentre}>
-  <TouchableOpacity style={styles.matchesViewCentreOpacity}>
+  <TouchableOpacity style={styles.matchesViewCentreOpacity} onPress={this.chat}>
                <Text style={styles.matchesViewCentreText}> MESSAGE</Text>
 </TouchableOpacity>
   </View>

@@ -9,7 +9,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, StatusBar} from 'react-native';
 import Routes from './src/Routes';
-import ChatScreen from './src/screens/ChatScreen'
+import MessagesScreen from './src/screens/MessagesScreen'
 import Homescreen from './src/Homescreen';
 import Welcome from './src/pages/Welcome'
 import HomeScreen from './src/Homescreen';
@@ -31,7 +31,7 @@ export default class App extends Component<{}> {
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#800000" barStyle="light-content"/>
-    <Routes/>
+    <MessagesScreen/>
       </View>
     );
   }
