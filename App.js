@@ -39,7 +39,7 @@ export default class App extends Component<{}> {
 
 const styles = StyleSheet.create({
   container : {
-  backgroundColor:'white',
+  backgroundColor:'blue',
   flex: 1,
   },
 });
