@@ -8,4 +8,4 @@ Fuctionality:
 *Discover
 *Profile
 *Likes
-New Features will be added During Development 
+New Features will be added During Development And Progress
