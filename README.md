@@ -8,4 +8,5 @@ Fuctionality:
 *Discover
 *Profile
 *Likes
+*Email And Password auth
 New Features will be added During Development And Progress
