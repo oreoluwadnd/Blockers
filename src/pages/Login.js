@@ -2,16 +2,42 @@ import React, { Component } from 'react';
 import {Text, View, StyleSheet, TouchableOpacity, TextInput} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import Logo from '../components/Logo';
+import firebaseSDK from '../config/firebaseSDK'
 export default class Login extends Component<{}> {
-  signup() {
-    Actions.signup()
-  }
-  homescreen() {
-    Actions.homescreen()
-  }
-  forgot() {
-    Actions.forgot()
-  }
+  static navigationOptions = {
+    title : 'Chat'
+  };
+  state = {
+    name:'no name',
+    email:'',
+    password: '',
+  };
+  onPressLogin = async () => {
+      const user ={
+        name:this.state.name,
+        email: this.state.email,
+        password: this.state.password,
+        avatar:this.state.avatar
+      };
+      const reponse = firebaseSDK.login(
+        user,
+        this.loginSuccess,
+        this.loginFailed
+      );
+    };
+    loginSuccess = () => {
+      console.log('login successfuol,navigate to chat')
+      this.props.navigation.navigate('ChatScreen',{
+        name:this.state.name,
+        email: this.state.email,
+        avatar: this.state.avatar
+      });
+    };
+    loginFailed = () => {
+      alert('Login failure. Please tried again.');
+    };
+    onChangeTextEmail = email => this.setState({email})
+    onChangeTextPassword = password => this.setState({password});
 render() {
         return (
         <View style={styles.container}>
@@ -23,21 +49,25 @@ render() {
               keyboardType="email-address"
               fontStyle='italic'
               onSubmitEditing={()=> this.password.focus()}
+              onChangeText={this.onChangeTextEmail}
+              value={this.state.email}
                />
               <TextInput style={styles.inputBox} underlineColorAndroid='white' placeholder="Password"
               secureTextEntry={true}
               fontStyle='italic'
+              onChangeText={this.onChangeTextPassword}
+              value={this.state.password}
               ref={(input) => this.password = input}
               />
-            <TouchableOpacity style={styles.button} onPress={this.homescreen}>
+            <TouchableOpacity style={styles.button} onPress={this.onPressLogin}>
                <Text style={styles.buttonText}>LOGIN</Text>
 </TouchableOpacity>
-<TouchableOpacity onPress={this.forgot}>
+<TouchableOpacity onPress={() => this.props.navigation.navigate('Forgot')}>
 <Text style={styles.forgotText}>Forgot Password?</Text>
 </TouchableOpacity>
             <View style={styles.signupTextCont}>
               <Text style={styles.signupText}>Don't have account yet?</Text>
-              <TouchableOpacity onPress={this.signup}>
+              <TouchableOpacity onPress={() => this.props.navigation.navigate('SignUp')}>
               <Text style={styles.signupButton}>Signup</Text>
               </TouchableOpacity>
             </View>
@@ -96,3 +126,4 @@ forgotText:{
 
 }
 });
+//adb shell input keyevent 82
