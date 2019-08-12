@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Image, View, Text, TouchableOpacity } from 'react-native';
-import { Actions } from 'react-native-router-flux';
 export default class Welcome extends Component <{}> {
-  gender() {
-    Actions.gender()
-  }
     render() {
       return (
         <View style={styles.container}>
@@ -15,7 +11,7 @@ style={{width: 120, height: 120, }}
 source={require("../Images/logo.png")}/>
 </TouchableOpacity>
 </View>
-<TouchableOpacity style={styles.button} onPress={this.gender}>
+<TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Gender')}>
 <Text style={styles.buttonText}>GET STARTED</Text>
 </TouchableOpacity>
       </View>

@@ -26,12 +26,12 @@ import MessageContBox from './src/components/MessageContBox';
 import Aboutscreen from './src/screens/AboutScreen'
 import ContactIcon from './src/icons/ContactIcon'
 import Gender from './src/pages/Gender'
+import AppNavigator from './src/navigation/AppNavigator'
 export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar backgroundColor="#800000" barStyle="light-content"/>
-    <Routes/>
+    <AppNavigator/>
       </View>
     );
   }
@@ -41,5 +41,6 @@ const styles = StyleSheet.create({
   container : {
   backgroundColor:'#800000',
   flex: 1,
+  justifyContent:'center'
   },
 });

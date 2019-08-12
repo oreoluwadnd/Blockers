@@ -18,10 +18,10 @@ export default class Gender extends Component <{}> {
     </Text>
 </View>
 <View style={styles.allView}>
-<TouchableOpacity style={styles.maleButton} onPress={this.login}>
+<TouchableOpacity style={styles.maleButton} onPress={() => this.props.navigation.navigate('Login')}>
 <Text style={styles.maleText}>MALE</Text>
 </TouchableOpacity>
-<TouchableOpacity style={styles.femaleButton} onPress={this.login}>
+<TouchableOpacity style={styles.femaleButton} onPress={() => this.props.navigation.navigate('Login')}>
 <Text style={styles.femaleText}>FEMALE</Text>
 </TouchableOpacity>
 </View>

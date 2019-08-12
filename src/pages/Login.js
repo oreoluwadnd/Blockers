@@ -80,6 +80,7 @@ const styles = StyleSheet.create ({
     backgroundColor:'#800000',
     flex: 1,
     alignItems : 'center',
+    
     justifyContent : 'center'
   },
   signupTextCont :{
@@ -126,4 +127,4 @@ forgotText:{
 
 }
 });
-//adb shell input keyevent 82
+//adb shell input keyevent 82 10.0.1.1

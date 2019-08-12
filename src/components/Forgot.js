@@ -3,9 +3,6 @@ import {Text, View, StyleSheet,TextInput, TouchableOpacity} from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import Logo from './Logo';
 export default class Forgot extends Component<{}> {
-    login() {
-        Actions.login()
-      }
     render(){  
       return(
           <View style={styles.container}>
@@ -21,7 +18,7 @@ export default class Forgot extends Component<{}> {
                <Text style={styles.buttonText}>GET ACCOUNT</Text>
 </TouchableOpacity>
  <View style={styles.signupTextCont}>
-              <TouchableOpacity onPress={this.login}>
+              <TouchableOpacity onPress={() => this.props.navigation.navigate('Login')}>
               <Text style={styles.signupButton}>Signin</Text>
               </TouchableOpacity>
             </View>

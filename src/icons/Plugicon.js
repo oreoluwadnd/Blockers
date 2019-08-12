@@ -24,15 +24,6 @@ export default class Plugicon extends Component<{}> {
     plugIcons :{
 flexDirection: 'row',
 alignItems: 'center',
-marginRight:23,
 paddingBottom: 10,
 },
-    plugIconsLeft:{
-
-    }, 
-    plugIconsRight:{
-marginRight:20
-    
-    }
-}
-    )
+})

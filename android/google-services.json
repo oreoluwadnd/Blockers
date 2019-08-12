@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "170692750285",
+    "firebase_url": "https://blockers-aore.firebaseio.com",
+    "project_id": "blockers-aore",
+    "storage_bucket": "blockers-aore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170692750285:android:78034c5dd001bc15",
+        "android_client_info": {
+          "package_name": "blockers.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170692750285-4tge1muhaschl9uuss8nh43h2m4hci0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvtJa8-CiamX1Oii_FqWA0_aOsOmpBU6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170692750285-4tge1muhaschl9uuss8nh43h2m4hci0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

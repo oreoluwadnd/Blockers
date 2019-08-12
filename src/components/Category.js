@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import {StyleSheet, View, Text, ScrollView, Image, TouchableOpacity, Dimensions} from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import Listing from '../components/Listing'
+import { withNavigation } from "react-navigation";
+import Discoverscreen from '../screens/DiscoverScreen';
 const { width } = Dimensions.get('window')
 export default class Categories extends Component<{}> {
-    swipe() {
-        Actions.swipe()
-    }
     render(){
       return(
+        <View style={{}}>
     <ScrollView 
       scrollEventThrottle={16}>
           <View style={{flex:1,
@@ -27,7 +27,7 @@ export default class Categories extends Component<{}> {
         <ScrollView horizontal={true}
               showsHorizontalScrollIndicator={false}
               >
-              <TouchableOpacity onPress={this.swipe}>
+              <TouchableOpacity onPress={() => this.props.navigation.navigate('SwipeScreen')}>
                  <Listing imageUri={require('../Images/g9.jpg')}
                  name="EXPLORE" />
                  </TouchableOpacity>
@@ -87,6 +87,7 @@ export default class Categories extends Component<{}> {
     </ScrollView>
        </View>
     </ScrollView>
+    </View>
    );
 }
 }

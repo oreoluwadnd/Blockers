@@ -7,7 +7,7 @@ export default class Plugicon extends Component<{}> {
             <View style={styles.contactView}>
           
             <Icon name="gmail" size={30} color='black' style={styles.gmailIcon} />
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => this.props.navigation.navigate('SwipeScreen')}>
             <Text style={styles.contactText}>
             Edfoldy@gmail.com
             </Text>
