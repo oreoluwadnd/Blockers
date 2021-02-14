@@ -13,6 +13,7 @@ import MessagesScreen from './src/screens/MessagesScreen'
 import Homescreen from './src/Homescreen';
 import Welcome from './src/pages/Welcome'
 import HomeScreen from './src/Homescreen';
+import SwipesScreen from './src/screens/SwipesScreen'
 import SwipeScreen from './src/screens/SwipeScreen';
 import Header from './src/components/Profilepage';
 import Likelist from './src/components/Data'
@@ -26,6 +27,8 @@ import MessageContBox from './src/components/MessageContBox';
 import Aboutscreen from './src/screens/AboutScreen'
 import ContactIcon from './src/icons/ContactIcon'
 import Gender from './src/pages/Gender'
+import Feeds from '../myapp/src/schbag app/Feeds';
+import Profilepage from '../myapp/src/components/Profilepage'
 import AppNavigator from './src/navigation/AppNavigator'
 export default class App extends Component<{}> {
   render() {

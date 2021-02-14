@@ -5,11 +5,11 @@ import {
      View, 
      StyleSheet,
      TouchableOpacity} from 'react-native';
-     import LogoutIcon from '../icons/LogoutIcon'
-     import BackIcon from '../icons/BackIcon'
+     import { Container, Header, Item, Input, Icon, Button, Content, Left, ListItem} from 'native-base';
     export default class Profilepage extends Component<{}> {
         render() {
             return(
+                <Container>
                 <View style={styles.contanier}>
                     <View style={styles.header}>
                       </View>
@@ -17,27 +17,18 @@ import {
                         <View style={styles.body}>
                             <View style={styles.bodycontent}>
                             <Text style={styles.name}>
-                               Racheal Miller
+                               Emmanuel Oreoluwa
                             </Text>
                             <Text style={styles.about}>
-                                DEV
+                                Computer Engineering
                             </Text>
                             <Text style={styles.status}>
-                              Admin
+                              90/ENG009/123
                             </Text>
-                            <TouchableOpacity style={styles.upload}>
-                                <Text style={styles.uploadtext}>
-                                   Upload
-                                </Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={styles.upload}>
-                                <Text style={styles.uploadtext}>
-                                Upload
-                                </Text>
-                            </TouchableOpacity>
                             </View>
                             </View>
                             </View>
+                            </Container>
             )
         }
     }

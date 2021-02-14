@@ -11,7 +11,7 @@ style={{width: 120, height: 120, }}
 source={require("../Images/logo.png")}/>
 </TouchableOpacity>
 </View>
-<TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Gender')}>
+<TouchableOpacity style={styles.button} onPress={this.onPresSignUp}> 
 <Text style={styles.buttonText}>GET STARTED</Text>
 </TouchableOpacity>
       </View>

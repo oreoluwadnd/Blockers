@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
-export default class Plugicon extends Component<{}> {
+export default class Plugicon extends Component<{ }> {
     render() {
         return (
             <View>

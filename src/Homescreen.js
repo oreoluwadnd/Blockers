@@ -64,13 +64,13 @@ const CustomDrawerComponent = (props) => (
         </View>
     </SafeAreaView>
 )
- const AppDrawerNavigator = createDrawerNavigator({
-   Discover:DiscoverScreen,
-    Likes:LikesScreen,
-    Matches:MatchesSceen,
-    About:AboutScreen,
- 
-},
+const AppDrawerNavigator = createDrawerNavigator({
+    Discover:DiscoverScreen,
+     Likes:LikesScreen,
+     Matches:MatchesSceen,
+     About:AboutScreen,
+  
+ },
 {
 contentComponent: CustomDrawerComponent,
 contentOptions:{
