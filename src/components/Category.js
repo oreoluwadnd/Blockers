@@ -52,7 +52,7 @@ export default class Categories extends Component<{}> {
               showsVerticalScrollIndicator={false}
               >
           <View style={{
-               marginTop: 40,
+               marginTop: 20,
            paddingHorizontal: 20
            }}>
               <Text style={{
@@ -69,7 +69,7 @@ export default class Categories extends Component<{}> {
                   Upgraded features with quality user experience 
               </Text>
         <View style={{width:width-40,
-         height:270,
+         height:220,
           marginTop:20
           }}>
               <Image source={require('../Images/g3.jpg')} 

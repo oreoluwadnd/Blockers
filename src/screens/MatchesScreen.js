@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
-import {Header, Left, Right, Button,Icon} from "native-base";
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Content } from 'native-base';
 import Plugicons from '../icons/Plugicon';
 import RatesIcons from '../icons/RatesIcons'
 import MessageIcon from '../icons/MessageIcon'
@@ -23,7 +23,7 @@ export default class MatchesScreen extends Component<{}> {
    }
   render() {
     return (
-         <View style={styles.container}>
+         <Container style={styles.container}>
          <Header style={{ backgroundColor: '#800000' }} androidStatusBarColor="#800000">
           <Left>
             <Button
@@ -32,15 +32,14 @@ export default class MatchesScreen extends Component<{}> {
               <Icon name="menu" />
             </Button>
           </Left>
-          <View>
-            <Text style={styles.headerText}>
-              MATCHES
-            </Text>
-         </View>
+          <Body>
+            <Title>LIKES</Title>
+          </Body>
         <Right/>
         <MessageIcon/>
         </Header>
-<View>
+        <Content>
+          <View>
 <View style={styles.newMatch}>
         <Text  style={styles.newMatchText}>
           NEW MATCH
@@ -55,8 +54,6 @@ export default class MatchesScreen extends Component<{}> {
 
         </View>
         <View style={styles.matchesLogo}>
-           
-    <Plugicons/>
           </View>
           <View style={styles.matchesViewRight}>
           <Image source={require('../Images/proff.jpg')} style={styles.matchesPic}/>
@@ -77,7 +74,8 @@ export default class MatchesScreen extends Component<{}> {
                <Text style={styles.matchesViewCentreText}> MESSAGE</Text>
 </TouchableOpacity>
   </View>
-</View>
+  </Content>
+</Container>
        );
     }
     }
@@ -104,10 +102,11 @@ export default class MatchesScreen extends Component<{}> {
            flexDirection: 'row',
            flexGrow: 1,
            justifyContent:'flex-end',
-           paddingTop: 50,
+           paddingTop: 20,
 },
 matchesViewLeft:{
-  marginRight:40
+marginRight: 80
+
 },
 matchesViewRight:{
 
@@ -117,7 +116,7 @@ newMatch:{
   paddingTop: 10,
 },
 newMatchText:{
-  fontSize:50,
+  fontSize:30,
   color:'#800000',
   fontWeight:'bold'
 },

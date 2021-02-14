@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Content } from 'native-base';
 import Logo from '../components/Logo'
 import ContactIcon from '../icons/ContactIcon'
-import {Header, Left, Right,Button, Icon} from "native-base";
 export default class AboutScreen extends Component<{}> {
   static navigationOptions = {
     drawerIcon: ({tintColor}) => (
@@ -11,7 +11,7 @@ export default class AboutScreen extends Component<{}> {
   }
     render() {
         return (
-          <View style={styles.container}>
+          <Container style={styles.container}>
           <Header style={{ backgroundColor: '#800000' }} androidStatusBarColor="#800000"> 
            <Left>
              <Button
@@ -20,13 +20,12 @@ export default class AboutScreen extends Component<{}> {
                <Icon name="menu" />
              </Button>
            </Left>
-           <View>
-             <Text style={styles.headerText}>
-               ABOUT
-             </Text>
-          </View>
+           <Body>
+            <Title>About</Title>
+          </Body>
            <Right/>
            </Header>
+            <Content>
            <View style={styles.aboutLogo}>
           <Logo />
           </View>
@@ -46,7 +45,8 @@ Copyright @Blockers 2019
           <View>
 <ContactIcon />
           </View>
-          </View>
+          </Content>
+          </Container>
          
        );
     }

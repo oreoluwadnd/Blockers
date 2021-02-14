@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import {Header, Left, Right, Icon, Button} from "native-base";
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Spinner, Content} from 'native-base';
 import Category from '../components/Category';
 import UserIcon from '../icons/UserIcon'
 export default class Discoverscreen extends Component<{}> {
@@ -11,7 +11,7 @@ export default class Discoverscreen extends Component<{}> {
    }
   render() {
     return (
-         <View style={styles.container}>
+         <Container style={styles.container}>
          <Header style={{ backgroundColor: '#800000' }} androidStatusBarColor="#800000"> 
           <Left>
             <Button
@@ -20,18 +20,19 @@ export default class Discoverscreen extends Component<{}> {
               <Icon name="menu" />
             </Button>
           </Left>
-          <View>
-            <Text style={styles.headerText}>
-              DISCOVER
-            </Text>
-         </View>
+          <Body>
+            <Title>Discover</Title>
+          </Body>
           <Right/>
           <UserIcon/>
           </Header>
+          <Content>
+          <Spinner/>
 <View style={styles.category}>
           <Category />
           </View>
-      </View>
+          </Content>
+      </Container>
 
        );
     }

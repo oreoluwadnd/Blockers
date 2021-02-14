@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import {Header, Left, Right, Icon, Button} from "native-base";
+import { Container, Header, Left, Body, Right, Button, Icon, Title, Content } from 'native-base';
 import Likeslist from '../components/Likeslist'
 import AphlasIcon from '../icons/AphlasIcon'
 export default class LikesScreen extends Component<{}> {
@@ -11,7 +11,7 @@ export default class LikesScreen extends Component<{}> {
    }
   render() {
     return (
-         <View style={styles.container}>
+         <Container style={styles.container}>
          <Header style={{ backgroundColor: '#800000' }} androidStatusBarColor="#800000">
           <Left>
             <Button
@@ -20,16 +20,16 @@ export default class LikesScreen extends Component<{}> {
               <Icon name="menu" />
             </Button>
           </Left>
-          <View>
-            <Text style={styles.headerText}>
-              LIKES
-            </Text>
-         </View>
+          <Body>
+            <Title>LIKES</Title>
+          </Body>
           <Right/>
           <AphlasIcon/>
         </Header>
+        <Content>
         <Likeslist />
-      </View>
+        </Content>
+      </Container>
 
        );
     }
